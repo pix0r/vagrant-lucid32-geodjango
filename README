@@ -1,0 +1,14 @@
+Vagrantfile and simple provisioning scripts to setup a geodjango server. Based on "lucid32_current" box which can be built from https://github.com/pix0r/vagrant-lucid32-current.
+
+Usage:
+
+git clone https://github.com/pix0r/vagrant-lucid32-geodjango.git
+cd vagrant-lucid32-geodjango
+vagrant up
+
+Optional: Create & install lucid32_geodjango box
+
+vagrant package --vagrantfile Vagrantfile.pkg --output lucid32_geodjango.box
+vagrant box add lucid32_geodjango lucid32_geodjango.box
+
+
